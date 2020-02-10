@@ -1,0 +1,95 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "~bootstrap/scss/bootstrap.scss";
+
+@mixin all {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font: normal 1rem sans-serif;
+}
+body {
+  @include all;
+  background-color: #fff;
+  transition: all 1s ease-in-out;
+  .addingItemsSec {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    text-align: center;
+    h3 {
+      display: inline-block;
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+      margin-top: 2rem;
+    }
+    form {
+      position: relative;
+      width: 100%;
+      height: auto;
+      input {
+        display: block;
+        width: 50%;
+        height: 3rem;
+        border: 2px solid #000;
+        border-radius: 0.2rem;
+        margin: 0.5rem auto;
+        padding-left: 1rem;
+        &.errorClass {
+          border-color: #c70d3a;
+        }
+      }
+      .passSec {
+        position: relative;
+        width: 100%;
+        height: 3.2rem;
+        i {
+          position: absolute;
+          top: 30%;
+          right: 30%;
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      display: inline-block;
+      width: 7rem;
+      height: 3rem;
+      background-color: #ffcc00;
+      border-radius: 0.3rem;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      border: none;
+      outline: none;
+      i {
+        font-size: 0.8rem;
+        padding-left: 0.4rem;
+      }
+    }
+    .submitCl {
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+    .registerSec {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0rem;
+      left: 0rem;
+      text-align: center;
+      p {
+        display: inline-block;
+        font-size: 4rem;
+        margin: 8rem auto 0rem auto;
+        color: #21243d;
+      }
+    }
+  }
+}
